@@ -1,0 +1,433 @@
+/* Importando Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilo global del body */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6e6;
+    color: #d6336c;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #ff3399; /* Color de fondo */
+    display: flex;
+    justify-content: space-around; /* Espacio entre los elementos */
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Enlaces de la navbar */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.navbar a:hover {
+    background-color: #d6336c;
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    padding-top: 60px; /* Asegura que no se solape con la navbar fija */
+    background: url(https://images7.alphacoders.com/984/thumb-1920-984422.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-top: 10px;
+    color: #ff3399; /* Color brillante */
+    text-shadow: 
+        0 0 10px #ff3399, 
+        0 0 20px #ff3399, 
+        0 0 30px #ff3399, 
+        0 0 40px #ff66cc;
+}
+
+/* Animación del corazón */
+.heart-animation {
+    font-size: 3em;
+    color: red;
+    animation: heartbeat 1.5s infinite;
+    margin-top: -10px;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.paper {
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    padding: 15px; /* Reducir el padding */
+    width: 200%; /* Reducir el tamaño del cuadro */
+    max-width: 500px; /* Establecer un tamaño máximo */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+    margin: 20px auto; /* Centrar el cuadro en el medio */
+}
+
+.letter {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#surprise {
+    background-color: #ff3399; /* Fondo rosa brillante */
+    color: white; /* Texto blanco */
+    font-size: 1.2em; /* Tamaño de fuente */
+    padding: 15px 30px; /* Espaciado interior */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer; /* Manito del cursor cuando pasa sobre el botón */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efecto suave al hacer hover */
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+#surprise:hover {
+    background-color: #ff66cc; /* Fondo rosa claro al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+/* Efecto al hacer clic */
+#surprise:active {
+    transform: scale(0.95); /* Hace que el botón se reduzca un poco al hacer clic */
+}
+
+/* Estilo para el subtítulo .razonestitulo */
+.razonestitulo {
+    font-size: 2em; /* Tamaño de fuente grande */
+    color: #ff3399; /* Color brillante similar al de tu diseño */
+    text-align: center; /* Centrado del texto */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    font-weight: 600; /* Peso de la fuente más destacado */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para resaltar el texto */
+}
+
+/* Opcional: Agregar un fondo con un pequeño borde decorativo */
+.razones {
+    background: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto; /* Centrado de la sección */
+}
+
+.Razones {
+  background: #ffccdc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin: 20px auto;
+  text-align: left;
+  border: 2px solid #ff99cc;
+  position: relative;
+}
+
+.Razones h2 {
+  text-align: center;
+  color: #b3003b;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px #ff6699;
+}
+
+.lista-razones {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.lista-razones li {
+  font-size: 1.2rem;
+  color: #d6336c;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ff99cc;
+  transition: all 0.3s ease-in-out;
+}
+
+.lista-razones li:hover {
+  background: #ffe6eb;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.cover {
+  background: url('https://example.com/valentine-bg.jpg') no-repeat center;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Decoración adicional */
+.divider {
+  font-size: 2rem;
+  color: #d6336c;
+  margin: 10px 0;
+  text-align: center;
+}
+.fotitos-juntos {
+    font-size: 2.5em;
+    color: #ff3399; /* Rosado vibrante */
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 105, 180, 0.8); /* Sombra con efecto neón */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: brillo 1.5s infinite alternate; /* Efecto de brillo */
+}
+
+/* Animación de brillo */
+@keyframes brillo {
+    0% { text-shadow: 3px 3px 10px rgba(255, 105, 180, 0.8); }
+    100% { text-shadow: 3px 3px 20px rgba(255, 20, 147, 1); }
+}
+/* Estilo para la sección de galería */
+.galeria {
+    text-align: center; /* Centra el título y las imágenes */
+    padding: 40px 0; /* Espaciado arriba y abajo */
+}
+.heart-shape {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin: 20px auto;
+}
+
+.heart-shape::before,
+.heart-shape::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart-shape::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart-shape::after {
+    top: 0;
+    left: 25px;
+}
+
+/* Título de la galería */
+.titulo-galeria {
+    font-size: 2.5em;
+    color: #ff3399; /* Rosado vibrante */
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 105, 180, 0.8); /* Sombra con efecto neón */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: brillo 1.5s infinite alternate; /* Efecto de brillo */
+}
+
+/* Animación de brillo */
+@keyframes brillo {
+    0% { text-shadow: 3px 3px 10px rgba(255, 105, 180, 0.8); }
+    100% { text-shadow: 3px 3px 20px rgba(255, 20, 147, 1); }
+}
+
+/* Contenedor de las imágenes */
+.imagenes {
+    display: grid; /* Usa un sistema de rejilla */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Imágenes más grandes */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centra las imágenes dentro de las celdas */
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes */
+.imagenes img {
+    width: 100%; /* Hace que las imágenes ocupen todo el espacio disponible en cada celda */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    max-width: 250px; /* Aumento el tamaño máximo de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto de hover en las imágenes */
+.imagenes img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+.canciones {
+    text-align: center;
+    background: white; /* Fondo rosado suave */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px auto;
+    width: 80%;
+}
+
+.titulo-canciones {
+    font-size: 2em;
+    color: #ff3399; /* Color rosado vibrante */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lista-canciones {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.lista-canciones li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.lista-canciones a {
+    text-decoration: none;
+    color: #d6336c;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.lista-canciones a:hover {
+    color: #ff0066;
+    text-decoration: underline;
+}
+.calendario {
+    text-align: center;
+    background: #ffe6f2;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    margin: 20px auto;
+}
+
+.titulo-calendario {
+    font-size: 2em;
+    color: #ff3399;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mes-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.mes-selector button {
+    background: #ff6699;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mes-selector button:hover {
+    background: #ff3366;
+    transform: scale(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 2px solid #ff99cc;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+th {
+    background: #ffccdc;
+    color: #b3003b;
+}
+
+td {
+    background: #fff0f5;
+    cursor: pointer;
+}
+
+td:hover {
+    background: #ff99cc;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.lista-eventos {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff0f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.lista-eventos h3 {
+    text-align: center;
+    color: #d6336c;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.lista-eventos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-eventos li {
+    font-size: 1.2rem;
+    background: #ffccdc;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #ff6699;
+}
+
+
+
